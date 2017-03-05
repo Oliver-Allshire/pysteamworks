@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import heapq
 
-AREA_THRESHOLD = 0.0005
+AREA_THRESHOLD = 0.0009
 
 def loop():
     import cscore as cs
@@ -113,6 +113,6 @@ if __name__ == "__main__":
         x, image, num_targets = find_target(image)
         cv2.imshow('image', image)
         while True:
-            if cv2.waitKey(50) != -1:
+            if cv2.waitKey(0) != 0:
                 break
 
